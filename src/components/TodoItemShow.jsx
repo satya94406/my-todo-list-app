@@ -11,9 +11,11 @@ function TodoItemShow({ TodoElements }) {
         <TodoItem
           key={item.id}
           todoName={item.todoName}
-          todoDate={item.todoDate} 
+          todoDate={item.todoDate}
+          priority={item.priority}   
           onDelete={() => dispatch(deleteTodo(item.id))}
         />
+
       ))}
     </>
   );
